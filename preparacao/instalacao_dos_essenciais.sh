@@ -1,5 +1,5 @@
 #!/bin/bash
-
+senha=$1
 # Define array de pacotes a serem instalados
 pacotes=(
   curl
@@ -59,4 +59,4 @@ do
 done
 
 #retorna se foram encontrados erros
-echo $erro_install
+echo $erro_install > output.txt
